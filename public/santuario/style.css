@@ -15,3 +15,6 @@ html.santuario-page{--paper:#f6f3ec;--ink:#253d37;--muted:#73766b;--line:#cdd0c1
 .santuario #lang-menu a{display:block;padding:0 8px;font-family:Arial,sans-serif;font-size:16px;font-weight:500;line-height:24px;border-left:1px solid transparent}
 .santuario #lang-menu a:hover{border-left-color:currentColor}
 @media(max-width:760px){.santuario .header-actions{gap:12px}.santuario .language-switch button{min-height:44px}.santuario #lang-menu a{padding-top:10px;padding-bottom:10px}}
+/* Preserve the original hotel's logo proportions and artwork at every size. */
+.santuario .hotel-logo{display:block;width:170px;aspect-ratio:6250/2655;background-color:var(--ink);-webkit-mask:url('/santuario/assets/brand/la-casa-que-canta-transparent.png') center/contain no-repeat;mask:url('/santuario/assets/brand/la-casa-que-canta-transparent.png') center/contain no-repeat}
+@media(max-width:760px){.santuario .hotel-logo{width:126px}}

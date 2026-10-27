@@ -24,6 +24,8 @@ L'anglais est la langue par défaut sur `/santuario/`. La version espagnole rest
 
 Les styles utilisent les classes `santuario-page` sur `<html>` et `santuario` sur `<body>`. Les familles de polices et l'animation sont nommées pour la section. Les liens internes restent sous `/santuario/`. Aucun CMS externe n'est nécessaire.
 
+Le logo de l'en-tête reprend les lettres et les lignes ondulées du logo officiel montré dans le pied de page du site hôtelier. L'original bleu (`/images/logo/logo.jpg`) et sa version transparente officielle (`/images/logo/logo-gris.png`) sont conservés sans modification dans `public/santuario/assets/brand/`, avec leur provenance. La version transparente sert de masque CSS pour adopter le vert du journal, en gardant ses proportions sur ordinateur et mobile. Les photographies éditoriales restent celles du ZIP.
+
 Chaque article contient un slug, un titre, une catégorie, un résumé, une image avec ses textes alternatifs, une date, un corps, une citation et les indicateurs `draft` et `demo`. Un brouillon (`draft: true`) n'est pas généré. Les temps de lecture éditoriaux de la maquette sont conservés ; sans `readingTimeMinutes`, le temps se calcule automatiquement à 200 mots par minute. Les favoris restent dans le navigateur. Les écouteurs prennent en compte les événements de navigation Astro.
 
 Les champs d'origine sont la version espagnole. L'objet `en` de chaque article contient sa traduction anglaise intégrale, y compris les textes alternatifs et la citation. Les modèles de page sont partagés entre les deux langues ; les métadonnées, les dates et les données structurées utilisent la langue courante, avec des liens `hreflang` EN/ES et une version par défaut anglaise.

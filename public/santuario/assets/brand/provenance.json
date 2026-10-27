@@ -1,0 +1,13 @@
+{
+  "original": {
+    "file": "la-casa-que-canta.jpg",
+    "source": "https://www.lacasaquecanta.com/images/logo/logo.jpg",
+    "description": "Original blue logo displayed in the official website footer."
+  },
+  "transparent": {
+    "file": "la-casa-que-canta-transparent.png",
+    "source": "https://www.lacasaquecanta.com/images/logo/logo-gris.png",
+    "description": "Official transparent version of the same lettering and wave artwork."
+  },
+  "usage": "Both source files are unmodified. The transparent logo supplies a CSS alpha mask, coloured with the journal's ink colour and proportionally resized in the header."
+}
