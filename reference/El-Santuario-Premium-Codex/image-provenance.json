@@ -1,0 +1,23 @@
+{
+  "method": "Built-in image generation",
+  "purpose": "Original conceptual editorial imagery for El Santuario; these images do not depict the actual hotel.",
+  "created": "2026-10-26",
+  "assets": [
+    {
+      "file": "dist/assets/editorial/coast.webp",
+      "prompt": "A full bleed landscape editorial photograph for El Santuario, an exceptionally elegant Mexican Pacific slow-living journal. A pristine tranquil pale jade ocean gently breaking over warm pale sand in a secluded small tropical cove at dawn, sculptural dark rounded rock on the far right, faint distant rocky coast, fine mist and peach ivory sunlit sky. The water has mesmerizing natural texture and a fine white line of foam. Shot on medium format film, natural believable grains and sophisticated muted warm tones, artistic composition, no oversaturation, no people, no buildings, no hotel pools. Upper third hazy sky. Wide 3:2 landscape. This is an original conceptual editorial nature photograph, not any real specific hotel. No text, no graphics, no logo, no border. Quiet and extraordinarily beautiful."
+    },
+    {
+      "file": "dist/assets/editorial/ritual.webp",
+      "prompt": "An original luxury slow-living editorial still life photograph. A low rough travertine table, warm ivory linen cloth draping irregularly, an open poetry book with pages indistinct, one handmade ceramic espresso cup, a tiny branch of white frangipani flowers. In the background a softly blurred calm Pacific ocean, golden morning sunlight and large palm leaf shadows. Atmospheric art direction, lived-in but minimal, creamy ivory and warm ochre, tactile textures, medium format film, luxurious travel magazine. Close scene, landscape 3:2 composition. No hotel architecture, no people, no legible text, no graphics, no logo. Evokes reading slowly by the sea."
+    },
+    {
+      "file": "dist/assets/editorial/ceramic.webp",
+      "prompt": "Original fine-art editorial photograph for a Mexican luxury journal about artisan craft and peace. Three sculptural hand-thrown unglazed terracotta and ivory clay vases arranged on an old warm beige plinth, one delicate branch with small white flowers in tallest vessel. Sunlight through a window draws beautiful deep geometric shadows across a richly textured warm plaster wall. Authentic nuanced handmade Mexican pottery, elegant minimal artistic composition, earth pigments, terracotta and dark umber. Museum-quality magazine photography, medium format film texture. Portrait 4:5 aspect ratio. No writing, no logo, no people, no watermark."
+    },
+    {
+      "file": "dist/assets/editorial/garden.webp",
+      "prompt": "Original poetic editorial photograph for El Santuario Mexican slow-living journal. Close view of a branch of delicate white frangipani blossoms with warm yellow centers and dark glossy green leaves in a tropical garden, large sculptural leaves and dappled golden sunlight behind them. Deep olive, soft cream, muted yellow, profound dark shadows, premium botanical photography, analogue film texture, natural imperfections, serene and intimate, elevated magazine art direction. A few flowers off center, lots of softly blurred dark green garden. Portrait 4:5 aspect ratio. No people, no architecture, no text, no logo."
+    }
+  ]
+}

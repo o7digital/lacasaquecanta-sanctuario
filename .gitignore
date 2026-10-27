@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+!.env.example
+artifacts/
+test-results/
+playwright-report/
+.DS_Store
+
+# The distribution in the supplied ZIP is a tracked visual reference.
+!reference/**/dist/
+!reference/**/dist/**
+.vercel

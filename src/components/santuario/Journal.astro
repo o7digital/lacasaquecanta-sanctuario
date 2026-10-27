@@ -1,0 +1,31 @@
+---
+import StoryCard from './StoryCard.astro';
+import type { Article } from '../../lib/santuario/articles';
+
+interface Props { articles: Article[] }
+const { articles } = Astro.props;
+const categories = ['Todas las historias', 'Naturaleza', 'Rituales', 'Arte y oficio', 'Sabores', 'Vida en la casa'];
+---
+
+<section id="diario" class="journal-section">
+  <div class="section-heading">
+    <div><p class="eyebrow">EL DIARIO</p><h2>El lado sereno <em>de la vida.</em></h2></div>
+    <p>Lecturas para disfrutar sin prisa.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filtrar historias por tema">
+    {categories.map((category, index) => (
+      <button data-filter={category} aria-pressed={index === 0} class:list={['filter', { active: index === 0 }]}>
+        {category}{index === 0 && <> <span>{String(articles.length).padStart(2, '0')}</span></>}
+      </button>
+    ))}
+  </div>
+  <p class="sr-only" id="filter-status" aria-live="polite"></p>
+  <div class="stories">
+    {articles.map((article, index) => <StoryCard article={article} index={index + 1} hidden={index > 2} />)}
+  </div>
+  <div class="more-row">
+    <span>UN MOMENTO PARA TI</span>
+    <button id="more-stories" class="outline-button">Más historias <span aria-hidden="true">↓</span></button>
+    <span>PARA LEER Y VOLVER A LEER</span>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+{
+  "slug": "la-belleza-de-lo-hecho-a-mano",
+  "title": "La belleza de lo hecho a mano.",
+  "category": "Arte y oficio",
+  "summary": "Objetos que guardan el tiempo, la tierra y la huella de quien los crea.",
+  "image": "/santuario/assets/editorial/ceramic.webp",
+  "imageAlt": "Piezas de cerámica artesanal y una rama en flor",
+  "heroAlt": "Imagen de concepto para La belleza de lo hecho a mano.",
+  "publishedAt": "2026-10-22",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 1,
+  "readingTimeMinutes": 5,
+  "sections": [
+    {
+      "heading": "La huella del gesto",
+      "text": "Una vasija hecha a mano no es perfectamente simétrica. Su borde puede guardar una pequeña irregularidad, su superficie una variación de color. Esas diferencias no interrumpen su belleza: le dan una voz propia."
+    },
+    {
+      "heading": "Mirar con las manos",
+      "text": "Hay materiales que nos invitan a acercarnos. El barro, la madera y los tejidos tienen una presencia que no depende del brillo. Nos recuerdan un ritmo de trabajo hecho de atención, repetición y paciencia."
+    },
+    {
+      "heading": "Elegir menos, mirar más",
+      "text": "Un objeto querido puede transformar una habitación sin llenarla. Una pieza de cerámica con una rama, una silla bien situada, un cuenco que usamos cada mañana. El valor está también en la relación que construimos con las cosas."
+    },
+    {
+      "heading": "Un recuerdo con sentido",
+      "text": "Cuando una pieza nos acompaña después de un viaje, lleva consigo algo más que su forma. Nos recuerda una conversación, una tarde, el lugar donde la descubrimos. Una manera discreta de seguir viajando cuando ya hemos vuelto."
+    }
+  ],
+  "quote": "La belleza también vive en lo que no se repite."
+}

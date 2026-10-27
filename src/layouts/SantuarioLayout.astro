@@ -1,0 +1,48 @@
+---
+import Header from '../components/santuario/Header.astro';
+import Footer from '../components/santuario/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  article?: boolean;
+  structuredData?: Record<string, unknown>;
+}
+
+const { title, description, image = '/santuario/assets/editorial/coast.webp', article = false, structuredData } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
+---
+
+<!doctype html>
+<html lang="es" id="top" class="santuario-page">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title} · El Santuario</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f6f3ec" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:title" content={`${title} · El Santuario`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:locale" content="es_MX" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/santuario/assets/editorial/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/santuario/fonts.css" />
+    <link rel="stylesheet" href="/santuario/style.css" />
+    {structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />}
+  </head>
+  <body class="santuario">
+    <Header />
+    <slot />
+    <Footer />
+    <script>
+      import '../scripts/santuario';
+    </script>
+  </body>
+</html>

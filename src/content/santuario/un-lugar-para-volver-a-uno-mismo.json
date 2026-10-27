@@ -1,0 +1,33 @@
+{
+  "slug": "un-lugar-para-volver-a-uno-mismo",
+  "title": "Un lugar para volver a uno mismo.",
+  "category": "Vida en la casa",
+  "summary": "Sobre el significado de un santuario y la calma que nos acompaña después del viaje.",
+  "image": "/santuario/assets/editorial/coast.webp",
+  "imageAlt": "Olas suaves en una cala al amanecer",
+  "heroAlt": "Imagen de concepto para Un lugar para volver a uno mismo.",
+  "publishedAt": "2026-10-16",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 4,
+  "readingTimeMinutes": 4,
+  "sections": [
+    {
+      "heading": "Una idea de refugio",
+      "text": "Un santuario puede ser un lugar, pero también una sensación. La de poder bajar la voz, dejar las cosas sobre una mesa y sentir que, durante un rato, no hace falta estar en ningún otro sitio."
+    },
+    {
+      "heading": "Hospitalidad que deja espacio",
+      "text": "Hay una forma de recibir que consiste en escuchar. Entender que algunas personas buscan una conversación y otras prefieren el silencio. Que el mismo paisaje puede significar celebración, descanso o simplemente una pausa."
+    },
+    {
+      "heading": "Nuestro diario",
+      "text": "El Santuario nace de esa mirada: reunir historias sobre naturaleza, arte, sabores y pequeños rituales. Lecturas para acompañar un viaje y prolongar su calma, incluso cuando el mar ya queda lejos."
+    },
+    {
+      "heading": "Después del viaje",
+      "text": "Tal vez regresar a uno mismo sea algo tan pequeño como recordar qué nos hace bien. Una lectura lenta, una mesa compartida, un paseo. Un refugio también puede construirse con momentos."
+    }
+  ],
+  "quote": "Un santuario es, también, una forma de sentir."
+}

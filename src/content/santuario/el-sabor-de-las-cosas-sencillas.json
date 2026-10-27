@@ -1,0 +1,29 @@
+{
+  "slug": "el-sabor-de-las-cosas-sencillas",
+  "title": "El sabor de las cosas sencillas.",
+  "category": "Sabores",
+  "summary": "Una mesa sin prisa. El aroma del café. Conversaciones que se alargan.",
+  "image": "/santuario/assets/editorial/ritual.webp",
+  "imageAlt": "Un libro abierto y una taza de cerámica bajo la luz de la mañana",
+  "heroAlt": "Imagen de concepto para El sabor de las cosas sencillas.",
+  "publishedAt": "2026-10-18",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 3,
+  "readingTimeMinutes": 3,
+  "sections": [
+    {
+      "heading": "Sentarse de verdad",
+      "text": "Hay una diferencia entre comer y sentarse a la mesa. La segunda opción nos invita a hacer una pausa, a mirar lo que tenemos delante y a compartir la atención con quienes nos acompañan."
+    },
+    {
+      "heading": "El primer sorbo",
+      "text": "El aroma de una bebida caliente, el tacto de una taza de barro, la luz sobre un mantel: una mesa puede hablar a todos los sentidos. No necesita abundancia para sentirse generosa."
+    },
+    {
+      "heading": "Dejar que la conversación siga",
+      "text": "A veces, lo mejor de una comida llega cuando ya hemos terminado. Una historia lleva a otra; nadie mira el reloj. También hay viajes que se recuerdan por esas sobremesas largas, hechas de cosas sencillas."
+    }
+  ],
+  "quote": "Una mesa puede ser un lugar al que siempre queremos volver."
+}

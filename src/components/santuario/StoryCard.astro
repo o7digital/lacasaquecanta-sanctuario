@@ -1,0 +1,25 @@
+---
+import { articleHref, readingTime, type Article } from '../../lib/santuario/articles';
+
+interface Props {
+  article: Article;
+  index: number;
+  hidden?: boolean;
+}
+
+const { article, index, hidden = false } = Astro.props;
+const href = articleHref(article);
+---
+
+<article class={`story story-${index}`} data-category={article.category} hidden={hidden}>
+  <a class="story-image" href={href}>
+    <img src={article.image} alt={article.imageAlt} loading="lazy" width="900" height="1100" />
+    <span class="image-link" aria-hidden="true">↗</span>
+  </a>
+  <div class="story-info">
+    <p class="eyebrow">{article.category} <span>· {readingTime(article)} MIN DE LECTURA</span></p>
+    <h3><a href={href}>{article.title}</a></h3>
+    <p class="excerpt">{article.summary}</p>
+    <a class="text-link" href={href}>Leer la historia <span aria-hidden="true">↗</span></a>
+  </div>
+</article>

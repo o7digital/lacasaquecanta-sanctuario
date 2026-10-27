@@ -1,0 +1,29 @@
+{
+  "slug": "una-manana-para-quedarse",
+  "title": "Una mañana para quedarse.",
+  "category": "Rituales",
+  "summary": "Un libro abierto, el primer café y el placer de no mirar la hora.",
+  "image": "/santuario/assets/editorial/ritual.webp",
+  "imageAlt": "Un libro abierto y una taza de cerámica bajo la luz de la mañana",
+  "heroAlt": "Imagen de concepto para Una mañana para quedarse.",
+  "publishedAt": "2026-10-24",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 0,
+  "readingTimeMinutes": 3,
+  "sections": [
+    {
+      "heading": "Antes de que empiece el día",
+      "text": "La luz llega despacio. Primero dibuja una línea en la mesa; después alcanza el borde de la taza. Hay mañanas que parecen pedir muy poco: abrir un libro, acercar una silla a la ventana y dejar que el café se enfríe un poco."
+    },
+    {
+      "heading": "Leer sin llegar a ninguna parte",
+      "text": "No todos los libros necesitan terminarse durante un viaje. A veces basta un poema, una página que queremos releer o una frase que nos acompaña el resto del día. Leer así es una forma de habitar el presente, sin metas ni prisa."
+    },
+    {
+      "heading": "Una costumbre que cabe en la maleta",
+      "text": "Podemos llevarnos este ritual a casa. Preparar una bebida con atención. Dejar el teléfono en otra habitación. Reservar diez minutos para algo que no tenga una utilidad inmediata. Las mañanas no tienen que ser perfectas para ser nuestras."
+    }
+  ],
+  "quote": "El día puede esperar un poco. Este momento, no."
+}

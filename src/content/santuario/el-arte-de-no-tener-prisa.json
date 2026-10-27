@@ -1,0 +1,33 @@
+{
+  "slug": "el-arte-de-no-tener-prisa",
+  "title": "El arte de no tener prisa.",
+  "category": "Naturaleza",
+  "summary": "A veces, lo único que necesitamos es un horizonte. Y el tiempo suficiente para mirarlo.",
+  "image": "/santuario/assets/editorial/coast.webp",
+  "imageAlt": "Olas suaves en una cala al amanecer",
+  "heroAlt": "Imagen de concepto para El arte de no tener prisa.",
+  "publishedAt": "2026-10-26",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 5,
+  "readingTimeMinutes": 4,
+  "sections": [
+    {
+      "heading": "Volver a mirar",
+      "text": "Hay algo en el movimiento del mar que invita a dejar de contar los minutos. Una ola alcanza la orilla, se recoge y vuelve a empezar. No tiene nada que demostrar. Tal vez por eso nos resulta tan fácil quedarnos mirando."
+    },
+    {
+      "heading": "Un paisaje, otra forma de estar",
+      "text": "Viajar también puede ser una forma de quitar cosas: la alarma del teléfono, la lista de pendientes, la necesidad de llenar cada hora. Dejar un espacio en blanco para un paseo sin destino, una conversación larga o una mañana que no necesita convertirse en un recuerdo perfecto."
+    },
+    {
+      "heading": "El pequeño ritual de la orilla",
+      "text": "Busca un lugar tranquilo. Mira cómo cambia la luz sobre el agua. Escucha lo cercano y lo lejano. No hace falta encontrar una respuesta ni sentir nada en particular. Basta con estar ahí, durante un rato, sin pedirle nada al paisaje."
+    },
+    {
+      "heading": "Llevarse un poco de calma",
+      "text": "Quizá lo más valioso de una pausa no sea lo que hacemos durante ella, sino lo que aprendemos a dejar de hacer. Al volver, podemos conservar ese gesto sencillo: dedicar unos minutos a mirar por la ventana, caminar más despacio, permitir que el día tenga su propio ritmo."
+    }
+  ],
+  "quote": "Hay momentos que no necesitan nada más que nuestra presencia."
+}

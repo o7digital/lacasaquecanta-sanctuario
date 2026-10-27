@@ -1,0 +1,29 @@
+{
+  "slug": "el-jardin-tambien-habla",
+  "title": "El jardín también habla.",
+  "category": "Naturaleza",
+  "summary": "Sombras, flores y pequeños descubrimientos para quien sabe detenerse.",
+  "image": "/santuario/assets/editorial/garden.webp",
+  "imageAlt": "Flores blancas entre hojas tropicales",
+  "heroAlt": "Imagen de concepto para El jardín también habla.",
+  "publishedAt": "2026-10-20",
+  "draft": false,
+  "demo": true,
+  "displayOrder": 2,
+  "readingTimeMinutes": 3,
+  "sections": [
+    {
+      "heading": "Otro ritmo",
+      "text": "Un jardín se descubre de cerca. La sombra cambia sobre una hoja, una flor se abre, el aire mueve una rama. Lo que parecía quieto está lleno de pequeños acontecimientos."
+    },
+    {
+      "heading": "El lujo de prestar atención",
+      "text": "Caminar entre plantas sin buscar nada en particular permite notar detalles que suelen pasar inadvertidos: una textura, un aroma, dos tonos de verde que no son iguales. No hace falta conocer sus nombres para disfrutar de su presencia."
+    },
+    {
+      "heading": "Una pausa entre hojas",
+      "text": "La próxima vez que encuentres un rincón verde, regálale unos minutos. Mira qué parte recibe la luz y cuál permanece en sombra. Escucha. Después continúa tu camino, quizá con una atención un poco más abierta."
+    }
+  ],
+  "quote": "La naturaleza no pide que vayamos más lejos, sino que miremos más cerca."
+}
