@@ -20,6 +20,11 @@ const santuario = defineCollection({
     readingTimeMinutes: z.number().int().positive().optional(),
     sections: z.array(z.object({ heading: z.string(), text: z.string() })).min(1),
     quote: z.string(),
+    en: z.object({
+      title: z.string(), summary: z.string(), imageAlt: z.string(), heroAlt: z.string(),
+      sections: z.array(z.object({ heading: z.string(), text: z.string() })).min(1),
+      quote: z.string(),
+    }),
   }),
 });
 

@@ -9,12 +9,15 @@ npm run dev
 
 Ouvrir <http://localhost:4321/santuario/>. La racine redirige vers cette section puisque ce dépôt contient uniquement le journal fourni. Aucun code du site hôtelier existant n'a été importé ni modifié.
 
+L'anglais est la langue par défaut sur `/santuario/`. La version espagnole reste disponible sous `/es/santuario/`. Le sélecteur reprend le bouton EN/ES avec chevron du site hôtelier, le même menu déroulant et la même convention de préfixe `/es`. Sa couleur s'adapte au fond ivoire du journal. Le changement de langue conserve l'article, les paramètres et l'ancre en cours ; les favoris sont partagés entre les traductions. Les slugs existants sont conservés pour préserver les liens déjà partagés.
+
 ## Organisation
 
 - `src/pages/santuario/` : couverture et routes `/santuario/lecturas/[slug]/`.
 - `src/components/santuario/` : composants correspondant à la maquette.
 - `src/layouts/SantuarioLayout.astro` : document, métadonnées, styles et comportements de la section.
 - `src/content/santuario/` : six articles validés par le schéma Astro (`src/content.config.ts`).
+- `src/lib/santuario/i18n.ts` : textes d'interface bilingues et résolution des URL de langue.
 - `public/santuario/` : images, polices, styles isolés et provenance des images.
 - `reference/El-Santuario-Premium-Codex/` : contenu intégral du ZIP, conservé sans modification pour comparer le rendu.
 - `licenses/santuario/` : licences des polices fournies.
@@ -22,6 +25,8 @@ Ouvrir <http://localhost:4321/santuario/>. La racine redirige vers cette section
 Les styles utilisent les classes `santuario-page` sur `<html>` et `santuario` sur `<body>`. Les familles de polices et l'animation sont nommées pour la section. Les liens internes restent sous `/santuario/`. Aucun CMS externe n'est nécessaire.
 
 Chaque article contient un slug, un titre, une catégorie, un résumé, une image avec ses textes alternatifs, une date, un corps, une citation et les indicateurs `draft` et `demo`. Un brouillon (`draft: true`) n'est pas généré. Les temps de lecture éditoriaux de la maquette sont conservés ; sans `readingTimeMinutes`, le temps se calcule automatiquement à 200 mots par minute. Les favoris restent dans le navigateur. Les écouteurs prennent en compte les événements de navigation Astro.
+
+Les champs d'origine sont la version espagnole. L'objet `en` de chaque article contient sa traduction anglaise intégrale, y compris les textes alternatifs et la citation. Les modèles de page sont partagés entre les deux langues ; les métadonnées, les dates et les données structurées utilisent la langue courante, avec des liens `hreflang` EN/ES et une version par défaut anglaise.
 
 ## Vérifier et construire
 
@@ -32,7 +37,7 @@ npm test
 npm run preview
 ```
 
-Les tests comparent les sept pages à la référence à 1440 et 390 pixels, vérifient les liens internes, les filtres, le menu clavier/mobile, les favoris, les ressources et les métadonnées. Les captures sont enregistrées dans `artifacts/` (non versionné).
+Les tests vérifient les quatorze pages en anglais et espagnol à 1440 et 390 pixels : traduction intégrale, liens internes, filtres, menus au clavier et sur mobile, sélection de langue depuis chaque article, favoris partagés, ressources et métadonnées. La version espagnole est aussi comparée à la maquette fournie en masquant l'en-tête qui accueille désormais le sélecteur de langue. Les captures sont enregistrées dans `artifacts/` (non versionné).
 
 ## Déploiement de la prévisualisation
 

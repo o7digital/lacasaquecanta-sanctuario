@@ -25,5 +25,26 @@
       "text": "Podemos llevarnos este ritual a casa. Preparar una bebida con atención. Dejar el teléfono en otra habitación. Reservar diez minutos para algo que no tenga una utilidad inmediata. Las mañanas no tienen que ser perfectas para ser nuestras."
     }
   ],
-  "quote": "El día puede esperar un poco. Este momento, no."
+  "quote": "El día puede esperar un poco. Este momento, no.",
+  "en": {
+    "title": "A morning to linger.",
+    "summary": "An open book, the first coffee and the pleasure of forgetting the time.",
+    "imageAlt": "An open book and a ceramic cup in the morning light",
+    "sections": [
+      {
+        "heading": "Before the day begins",
+        "text": "The light arrives slowly. First it draws a line across the table; then it reaches the edge of the cup. Some mornings seem to ask for very little: open a book, pull a chair up to the window and let the coffee cool a little."
+      },
+      {
+        "heading": "Reading without a destination",
+        "text": "Not every book needs to be finished on a journey. Sometimes a poem is enough, a page we want to read again or a sentence that stays with us for the rest of the day. Reading this way is a way of living in the present, without goals or hurry."
+      },
+      {
+        "heading": "A habit that fits in your suitcase",
+        "text": "We can take this ritual home. Prepare a drink with care. Leave the phone in another room. Set aside ten minutes for something that serves no immediate purpose. Mornings do not have to be perfect to belong to us."
+      }
+    ],
+    "quote": "The day can wait a little. This moment cannot.",
+    "heroAlt": "Concept image for A morning to linger."
+  }
 }

@@ -1,21 +1,23 @@
 ---
+import { getI18n } from '../../lib/santuario/i18n';
 import StoryCard from './StoryCard.astro';
 import type { Article } from '../../lib/santuario/articles';
 
 interface Props { articles: Article[] }
 const { articles } = Astro.props;
-const categories = ['Todas las historias', 'Naturaleza', 'Rituales', 'Arte y oficio', 'Sabores', 'Vida en la casa'];
+const { copy } = getI18n(Astro.url);
+const categories = [{ value: 'all', label: copy.allStories }, ...Object.entries(copy.categories).map(([value, label]) => ({ value, label }))];
 ---
 
 <section id="diario" class="journal-section">
   <div class="section-heading">
-    <div><p class="eyebrow">EL DIARIO</p><h2>El lado sereno <em>de la vida.</em></h2></div>
-    <p>Lecturas para disfrutar sin prisa.</p>
+    <div><p class="eyebrow">{copy.journal.toUpperCase()}</p><h2>{copy.journalTitle[0]} <em>{copy.journalTitle[1]}</em></h2></div>
+    <p>{copy.journalIntro}</p>
   </div>
-  <div class="filters" role="group" aria-label="Filtrar historias por tema">
+  <div class="filters" role="group" aria-label={copy.filterLabel}>
     {categories.map((category, index) => (
-      <button data-filter={category} aria-pressed={index === 0} class:list={['filter', { active: index === 0 }]}>
-        {category}{index === 0 && <> <span>{String(articles.length).padStart(2, '0')}</span></>}
+      <button data-filter={category.value} aria-pressed={index === 0} class:list={['filter', { active: index === 0 }]}>
+        {category.label}{index === 0 && <> <span>{String(articles.length).padStart(2, '0')}</span></>}
       </button>
     ))}
   </div>
@@ -24,8 +26,8 @@ const categories = ['Todas las historias', 'Naturaleza', 'Rituales', 'Arte y ofi
     {articles.map((article, index) => <StoryCard article={article} index={index + 1} hidden={index > 2} />)}
   </div>
   <div class="more-row">
-    <span>UN MOMENTO PARA TI</span>
-    <button id="more-stories" class="outline-button">Más historias <span aria-hidden="true">↓</span></button>
-    <span>PARA LEER Y VOLVER A LEER</span>
+    <span>{copy.moment}</span>
+    <button id="more-stories" class="outline-button">{copy.more} <span aria-hidden="true">↓</span></button>
+    <span>{copy.reread}</span>
   </div>
 </section>

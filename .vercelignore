@@ -1,0 +1,11 @@
+# Browser captures and reference files are local verification material.
+artifacts/
+test-results/
+playwright-report/
+reference/
+tests/
+node_modules/
+.astro/
+.git/
+dist/
+.env*

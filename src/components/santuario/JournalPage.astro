@@ -1,0 +1,28 @@
+---
+import SantuarioLayout from '../../layouts/SantuarioLayout.astro';
+import Masthead from './Masthead.astro';
+import Cover from './Cover.astro';
+import EditorNote from './EditorNote.astro';
+import Journal from './Journal.astro';
+import Manifesto from './Manifesto.astro';
+import Closing from './Closing.astro';
+import { getArticles } from '../../lib/santuario/articles';
+import { getI18n } from '../../lib/santuario/i18n';
+
+const { lang, copy } = getI18n(Astro.url);
+const articles = await getArticles(lang);
+---
+
+<SantuarioLayout
+  title={copy.pageTitle}
+  description={copy.description}
+>
+  <main id="main">
+    <Masthead />
+    <Cover />
+    <EditorNote />
+    <Journal articles={articles} />
+    <Manifesto />
+    <Closing />
+  </main>
+</SantuarioLayout>

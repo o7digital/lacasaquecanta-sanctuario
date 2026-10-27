@@ -29,5 +29,30 @@
       "text": "Tal vez regresar a uno mismo sea algo tan pequeño como recordar qué nos hace bien. Una lectura lenta, una mesa compartida, un paseo. Un refugio también puede construirse con momentos."
     }
   ],
-  "quote": "Un santuario es, también, una forma de sentir."
+  "quote": "Un santuario es, también, una forma de sentir.",
+  "en": {
+    "title": "A place to return to yourself.",
+    "summary": "On the meaning of a sanctuary and the calm that stays with us after a journey.",
+    "imageAlt": "Gentle waves in a quiet cove at dawn",
+    "sections": [
+      {
+        "heading": "An idea of refuge",
+        "text": "A sanctuary can be a place, but it can also be a feeling. The feeling of being able to lower your voice, set your things down on a table and sense that, for a little while, you do not need to be anywhere else."
+      },
+      {
+        "heading": "Hospitality that leaves room",
+        "text": "There is a way of welcoming people that begins with listening. Understanding that some seek conversation and others prefer silence. That the same landscape can mean celebration, rest or simply a pause."
+      },
+      {
+        "heading": "Our journal",
+        "text": "El Santuario grows from this perspective: bringing together stories about nature, art, flavours and small rituals. Readings to accompany a journey and extend its calm, even when the sea is far away."
+      },
+      {
+        "heading": "After the journey",
+        "text": "Perhaps returning to ourselves is as simple as remembering what makes us feel well. An unhurried read, a shared table, a walk. A refuge can be built from moments, too."
+      }
+    ],
+    "quote": "A sanctuary is also a way of feeling.",
+    "heroAlt": "Concept image for A place to return to yourself."
+  }
 }

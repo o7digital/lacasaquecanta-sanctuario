@@ -1,0 +1,29 @@
+---
+import SantuarioLayout from '../../layouts/SantuarioLayout.astro';
+import ArticlePage from './Article.astro';
+import { articleHref, type Article } from '../../lib/santuario/articles';
+import { getI18n } from '../../lib/santuario/i18n';
+
+interface Props { article: Article; related: Article[] }
+const { article, related } = Astro.props;
+const { lang, copy } = getI18n(Astro.url);
+const canonical = new URL(articleHref(article, lang), Astro.site);
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: article.title,
+  description: article.summary,
+  image: new URL(article.image, Astro.site).href,
+  datePublished: article.publishedAt.toISOString(),
+  author: { '@type': 'Organization', name: 'El Santuario · La Casa Que Canta' },
+  publisher: { '@type': 'Organization', name: 'La Casa Que Canta' },
+  mainEntityOfPage: canonical.href,
+  articleSection: copy.categories[article.category],
+  inLanguage: lang === 'es' ? 'es-MX' : 'en-US',
+  creativeWorkStatus: article.demo ? 'Demo' : 'Published',
+};
+---
+
+<SantuarioLayout title={article.title} description={article.summary} image={article.image} article structuredData={structuredData}>
+  <ArticlePage article={article} related={related} />
+</SantuarioLayout>

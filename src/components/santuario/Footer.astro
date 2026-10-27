@@ -1,1 +1,6 @@
-<footer><div class="footer-top"><a class="footer-name" href="/santuario/">El Santuario<span>UN DIARIO DE LA CASA QUE CANTA</span></a><p>La calma también<br>puede ser una forma de vivir.</p><a class="back-top" href="#top">Volver arriba ↑</a></div><div class="footer-bottom"><span>ZIHUATANEJO · MÉXICO</span><span>Propuesta editorial · Textos e imágenes de concepto</span><span>© LA CASA QUE CANTA 2026</span></div></footer>
+---
+import { getI18n } from '../../lib/santuario/i18n';
+const { copy, home } = getI18n(Astro.url);
+---
+
+<footer><div class="footer-top"><a class="footer-name" href={home}>El Santuario<span>{copy.byline}</span></a><p>{copy.footerLines[0]}<br />{copy.footerLines[1]}</p><a class="back-top" href="#top">{copy.backTop}</a></div><div class="footer-bottom"><span>{copy.location.replace(', ', ' · ')}</span><span>{copy.demo}</span><span>© LA CASA QUE CANTA 2026</span></div></footer>

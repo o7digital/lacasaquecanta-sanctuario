@@ -25,5 +25,26 @@
       "text": "A veces, lo mejor de una comida llega cuando ya hemos terminado. Una historia lleva a otra; nadie mira el reloj. También hay viajes que se recuerdan por esas sobremesas largas, hechas de cosas sencillas."
     }
   ],
-  "quote": "Una mesa puede ser un lugar al que siempre queremos volver."
+  "quote": "Una mesa puede ser un lugar al que siempre queremos volver.",
+  "en": {
+    "title": "The taste of simple things.",
+    "summary": "An unhurried table. The aroma of coffee. Conversations that linger.",
+    "imageAlt": "An open book and a ceramic cup in the morning light",
+    "sections": [
+      {
+        "heading": "Truly sitting down",
+        "text": "There is a difference between eating and sitting down at the table. The latter invites us to pause, look at what is in front of us and share our attention with those beside us."
+      },
+      {
+        "heading": "The first sip",
+        "text": "The aroma of a warm drink, the feel of a clay cup, the light on a tablecloth: a table can speak to all the senses. It does not need abundance to feel generous."
+      },
+      {
+        "heading": "Letting the conversation linger",
+        "text": "Sometimes the best part of a meal comes after we have finished. One story leads to another; nobody checks the time. Some journeys are remembered for those long hours around the table, made of simple things."
+      }
+    ],
+    "quote": "A table can be a place we always want to return to.",
+    "heroAlt": "Concept image for The taste of simple things."
+  }
 }

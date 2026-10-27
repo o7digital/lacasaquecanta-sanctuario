@@ -1,1 +1,6 @@
-<section class="editor-note"><span class="note-star" aria-hidden="true">✳</span><p>Pequeñas historias. Grandes pausas.<br>Un lugar para descubrir todo aquello<br>que nos hace <em>sentir en paz.</em></p><span class="note-signature">Bienvenido a nuestro mundo.</span></section>
+---
+import { getI18n } from '../../lib/santuario/i18n';
+const { copy } = getI18n(Astro.url);
+---
+
+<section class="editor-note"><span class="note-star" aria-hidden="true">✳</span><p>{copy.noteLines[0]}<br />{copy.noteLines[1]}<br />{copy.noteLines[2]} <em>{copy.noteEmphasis}</em></p><span class="note-signature">{copy.welcome}</span></section>

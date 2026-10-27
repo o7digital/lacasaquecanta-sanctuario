@@ -1,39 +1,6 @@
 ---
-import SantuarioLayout from '../../../layouts/SantuarioLayout.astro';
-import ArticlePage from '../../../components/santuario/Article.astro';
-import { articleHref, getArticles, type Article } from '../../../lib/santuario/articles';
-
-export async function getStaticPaths() {
-  const articles = await getArticles();
-  return articles.map(article => ({
-    params: { slug: article.slug },
-    props: {
-      article,
-      related: articles.filter(other => other.slug !== article.slug)
-        .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()).slice(0, 2),
-    },
-  }));
-}
-
-interface Props { article: Article; related: Article[] }
-const { article, related } = Astro.props;
-const canonical = new URL(articleHref(article), Astro.site);
-const structuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: article.title,
-  description: article.summary,
-  image: new URL(article.image, Astro.site).href,
-  datePublished: article.publishedAt.toISOString(),
-  author: { '@type': 'Organization', name: 'El Santuario · La Casa Que Canta' },
-  publisher: { '@type': 'Organization', name: 'La Casa Que Canta' },
-  mainEntityOfPage: canonical.href,
-  articleSection: article.category,
-  inLanguage: 'es-MX',
-  creativeWorkStatus: article.demo ? 'Demo' : 'Published',
-};
+import ArticlePage from '../../../components/santuario/ArticlePage.astro';
+import { getArticlePaths } from '../../../lib/santuario/articles';
+export async function getStaticPaths() { return getArticlePaths('en'); }
 ---
-
-<SantuarioLayout title={article.title} description={article.summary} image={article.image} article structuredData={structuredData}>
-  <ArticlePage article={article} related={related} />
-</SantuarioLayout>
+<ArticlePage {...Astro.props} />

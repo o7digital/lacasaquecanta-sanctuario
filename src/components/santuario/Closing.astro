@@ -1,1 +1,6 @@
-<section class="closing"><p class="eyebrow">LLEVA CONTIGO ESTA SENSACIÓN</p><h2>Hay historias que se leen.<br><em>Y otras que se viven.</em></h2><a class="outline-button" href="https://www.lacasaquecanta.com/" target="_blank" rel="noopener">Descubrir La Casa Que Canta <span aria-hidden="true">↗</span></a></section>
+---
+import { getI18n } from '../../lib/santuario/i18n';
+const { copy, hotel } = getI18n(Astro.url);
+---
+
+<section class="closing"><p class="eyebrow">{copy.closingLabel}</p><h2>{copy.closingTitle[0]}<br /><em>{copy.closingTitle[1]}</em></h2><a class="outline-button" href={hotel} target="_blank" rel="noopener">{copy.discoverFull} <span aria-hidden="true">↗</span></a></section>

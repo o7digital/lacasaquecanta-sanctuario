@@ -5,3 +5,13 @@ html.santuario-page{--paper:#f6f3ec;--ink:#253d37;--muted:#73766b;--line:#cdd0c1
 @media(prefers-reduced-motion:reduce){html.santuario-page{scroll-behavior:auto}.santuario *,.santuario *:before,.santuario *:after{animation:none!important;transition:none!important}}
 
 @media(max-width:760px){.santuario .cover h2{font-size:58px;line-height:1;max-width:none}.santuario .cover h2 br:first-child,.santuario .cover h2 br:first-of-type{display:block}.santuario .cover h2 br:last-of-type{display:none}.santuario .cover h2 em{padding-left:0}}
+/* Language dropdown: same EN/ES control and chevron as lacasaquecanta.com. */
+.santuario .header-actions{display:flex;align-items:center;gap:24px}
+.santuario .language-switch{position:relative;display:flex;flex-direction:column;text-align:left;z-index:10}
+.santuario .language-switch button{display:inline-flex;align-items:center;width:100%;font-family:Arial,sans-serif;font-size:16px;font-weight:500;line-height:24px;padding:0 8px;background:transparent}
+.santuario .language-switch svg{width:20px;height:20px;flex-shrink:0}
+.santuario #lang-menu{position:absolute;top:100%;right:0;margin-top:8px;width:100%;border-left:1px solid transparent;border-radius:6px;background:var(--paper);transform-origin:top right}
+.santuario #lang-menu>div{padding:4px 0}
+.santuario #lang-menu a{display:block;padding:0 8px;font-family:Arial,sans-serif;font-size:16px;font-weight:500;line-height:24px;border-left:1px solid transparent}
+.santuario #lang-menu a:hover{border-left-color:currentColor}
+@media(max-width:760px){.santuario .header-actions{gap:12px}.santuario .language-switch button{min-height:44px}.santuario #lang-menu a{padding-top:10px;padding-bottom:10px}}

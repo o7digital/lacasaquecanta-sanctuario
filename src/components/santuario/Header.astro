@@ -1,1 +1,23 @@
-<a class="skip" href="#main">Ir al contenido</a><header class="topbar"><a class="hotel-brand" href="/santuario/" aria-label="El Santuario, inicio"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 29c5-6 12-6 18 0s13 6 18 0M6 36c5-6 12-6 18 0s13 6 18 0"/><path d="M15 21a9 9 0 0 1 18 0M24 5v5M9 11l4 4M39 11l-4 4"/></svg><span>LA CASA<br>QUE CANTA</span></a><nav aria-label="Navegación principal"><a href="/santuario/#diario">El diario</a><a href="/santuario/#mirada">Nuestra mirada</a></nav><a class="hotel-link" href="https://www.lacasaquecanta.com/" target="_blank" rel="noopener">Descubrir la casa <span aria-hidden="true">↗</span></a><button class="mobile-menu" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú"><span></span><span></span></button></header><nav id="mobile-nav" class="mobile-nav" aria-label="Menú móvil" hidden><a href="/santuario/#diario">El diario</a><a href="/santuario/#mirada">Nuestra mirada</a><a href="https://www.lacasaquecanta.com/" target="_blank" rel="noopener">Descubrir la casa ↗</a></nav>
+---
+import LanguageSwitch from './LanguageSwitch.astro';
+import { getI18n } from '../../lib/santuario/i18n';
+const { copy, home, hotel } = getI18n(Astro.url);
+---
+
+<a class="skip" href="#main">{copy.skip}</a>
+<header class="topbar">
+  <a class="hotel-brand" href={home} aria-label={copy.homeLabel}>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 29c5-6 12-6 18 0s13 6 18 0M6 36c5-6 12-6 18 0s13 6 18 0"/><path d="M15 21a9 9 0 0 1 18 0M24 5v5M9 11l4 4M39 11l-4 4"/></svg>
+    <span>LA CASA<br />QUE CANTA</span>
+  </a>
+  <nav aria-label={copy.mainNav}><a href={`${home}#diario`}>{copy.journal}</a><a href={`${home}#mirada`}>{copy.perspective}</a></nav>
+  <div class="header-actions">
+    <LanguageSwitch />
+    <a class="hotel-link" href={hotel} target="_blank" rel="noopener">{copy.discover} <span aria-hidden="true">↗</span></a>
+    <button class="mobile-menu" aria-expanded="false" aria-controls="mobile-nav" aria-label={copy.openMenu}><span></span><span></span></button>
+  </div>
+</header>
+<nav id="mobile-nav" class="mobile-nav" aria-label={copy.mobileNav} hidden>
+  <a href={`${home}#diario`}>{copy.journal}</a><a href={`${home}#mirada`}>{copy.perspective}</a>
+  <a href={hotel} target="_blank" rel="noopener">{copy.discover} ↗</a>
+</nav>

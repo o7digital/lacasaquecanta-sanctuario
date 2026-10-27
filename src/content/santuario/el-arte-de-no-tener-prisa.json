@@ -29,5 +29,30 @@
       "text": "Quizá lo más valioso de una pausa no sea lo que hacemos durante ella, sino lo que aprendemos a dejar de hacer. Al volver, podemos conservar ese gesto sencillo: dedicar unos minutos a mirar por la ventana, caminar más despacio, permitir que el día tenga su propio ritmo."
     }
   ],
-  "quote": "Hay momentos que no necesitan nada más que nuestra presencia."
+  "quote": "Hay momentos que no necesitan nada más que nuestra presencia.",
+  "en": {
+    "title": "The art of slowing down.",
+    "summary": "Sometimes, all we need is a horizon. And enough time to take it in.",
+    "imageAlt": "Gentle waves in a quiet cove at dawn",
+    "sections": [
+      {
+        "heading": "Learning to look again",
+        "text": "There is something about the movement of the sea that invites us to stop counting the minutes. A wave reaches the shore, draws back and begins again. It has nothing to prove. Perhaps that is why we find it so easy to keep watching."
+      },
+      {
+        "heading": "A landscape, another way of being",
+        "text": "Travel can also be a way of letting things go: the phone alarm, the to-do list, the need to fill every hour. Leaving a little room for a walk with no destination, a long conversation or a morning that does not have to become a perfect memory."
+      },
+      {
+        "heading": "A small ritual by the shore",
+        "text": "Find a quiet spot. Watch the light change on the water. Listen to the sounds nearby and far away. There is no need to find an answer or feel anything in particular. Simply be there for a while, asking nothing of the landscape."
+      },
+      {
+        "heading": "Taking a little calm home",
+        "text": "Perhaps the most valuable part of a pause is not what we do during it, but what we learn to stop doing. When we return, we can keep that simple gesture: spend a few minutes looking out of the window, walk a little more slowly, let the day find its own rhythm."
+      }
+    ],
+    "quote": "Some moments need nothing more than our presence.",
+    "heroAlt": "Concept image for The art of slowing down."
+  }
 }

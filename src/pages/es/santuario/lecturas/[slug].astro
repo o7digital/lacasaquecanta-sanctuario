@@ -1,0 +1,6 @@
+---
+import ArticlePage from '../../../../components/santuario/ArticlePage.astro';
+import { getArticlePaths } from '../../../../lib/santuario/articles';
+export async function getStaticPaths() { return getArticlePaths('es'); }
+---
+<ArticlePage {...Astro.props} />

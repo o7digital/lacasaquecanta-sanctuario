@@ -25,5 +25,26 @@
       "text": "La próxima vez que encuentres un rincón verde, regálale unos minutos. Mira qué parte recibe la luz y cuál permanece en sombra. Escucha. Después continúa tu camino, quizá con una atención un poco más abierta."
     }
   ],
-  "quote": "La naturaleza no pide que vayamos más lejos, sino que miremos más cerca."
+  "quote": "La naturaleza no pide que vayamos más lejos, sino que miremos más cerca.",
+  "en": {
+    "title": "The garden speaks, too.",
+    "summary": "Shadows, flowers and small discoveries for those who know how to pause.",
+    "imageAlt": "White flowers among tropical leaves",
+    "sections": [
+      {
+        "heading": "A different rhythm",
+        "text": "A garden reveals itself up close. A shadow shifts across a leaf, a flower opens, the breeze moves a branch. What seemed still is full of small happenings."
+      },
+      {
+        "heading": "The luxury of paying attention",
+        "text": "Walking among plants without looking for anything in particular lets us notice details we often miss: a texture, a scent, two shades of green that are not quite the same. We do not need to know their names to enjoy their presence."
+      },
+      {
+        "heading": "A pause among the leaves",
+        "text": "The next time you find a green corner, give it a few minutes. Notice which part catches the light and which stays in shadow. Listen. Then continue on your way, perhaps with your attention a little more open."
+      }
+    ],
+    "quote": "Nature does not ask us to go further, but to look more closely.",
+    "heroAlt": "Concept image for The garden speaks, too."
+  }
 }

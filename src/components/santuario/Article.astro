@@ -1,41 +1,43 @@
 ---
+import { getI18n } from '../../lib/santuario/i18n';
 import StoryCard from './StoryCard.astro';
 import { displayDate, readingTime, type Article } from '../../lib/santuario/articles';
 
 interface Props { article: Article; related: Article[] }
 const { article, related } = Astro.props;
+const { lang, copy, home } = getI18n(Astro.url);
 ---
 
 <main id="main" class="article-main">
-  <div class="article-breadcrumb"><a href="/santuario/">El Santuario</a><span>/</span><span>{article.category}</span></div>
+  <div class="article-breadcrumb"><a href={home}>El Santuario</a><span>/</span><span>{copy.categories[article.category]}</span></div>
   <header class="article-header">
-    <p class="eyebrow">{article.category} <span>· {readingTime(article)} MIN DE LECTURA</span></p>
+    <p class="eyebrow">{copy.categories[article.category]} <span>· {readingTime(article)} {copy.minutes}</span></p>
     <h1>{article.title}</h1>
     <p class="article-intro">{article.summary}</p>
     <div class="article-meta">
-      <span>EL SANTUARIO · {displayDate(article.publishedAt)}</span>
-      <button class="save-story" data-slug={article.slug} aria-pressed="false"><span aria-hidden="true">♡</span> Guardar lectura</button>
+      <span>EL SANTUARIO · {displayDate(article.publishedAt, lang)}</span>
+      <button class="save-story" data-slug={article.slug} aria-pressed="false"><span aria-hidden="true">♡</span> {copy.save}</button>
     </div>
   </header>
   <figure class="article-hero">
     <img src={article.image} alt={article.heroAlt} width="1536" height="1024" fetchpriority="high" />
-    <figcaption>UNA MIRADA AL ARTE DE VIVIR SIN PRISA · IMAGEN DE CONCEPTO</figcaption>
+    <figcaption>{copy.heroCaption}</figcaption>
   </figure>
   <div class="article-layout">
     <aside>
       <p class="eyebrow">EL SANTUARIO</p>
-      <p>Historias para<br />habitar la calma.</p>
-      <a href="/santuario/#diario">← Volver al diario</a>
+      <p>{copy.asideLines[0]}<br />{copy.asideLines[1]}</p>
+      <a href={`${home}#diario`}>{copy.backJournal}</a>
     </aside>
     <div class="article-body">
       {article.sections.map(section => <section><h2>{section.heading}</h2><p>{section.text}</p></section>)}
       <blockquote>“{article.quote}”</blockquote>
-      <div class="article-end"><span>UN DIARIO DE LA CASA QUE CANTA</span><a href="/santuario/#diario">Seguir leyendo ↗</a></div>
+      <div class="article-end"><span>{copy.byline}</span><a href={`${home}#diario`}>{copy.continueReading}</a></div>
     </div>
   </div>
   <section class="related">
-    <p class="eyebrow">EL VIAJE CONTINÚA</p>
-    <h2>Quédate <em>un poco más.</em></h2>
+    <p class="eyebrow">{copy.journey}</p>
+    <h2>{copy.stay[0]} <em>{copy.stay[1]}</em></h2>
     <div class="related-grid">
       {related.map((entry, index) => <StoryCard article={entry} index={index + 1} />)}
     </div>

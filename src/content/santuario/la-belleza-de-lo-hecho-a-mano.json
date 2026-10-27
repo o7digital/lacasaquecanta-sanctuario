@@ -29,5 +29,30 @@
       "text": "Cuando una pieza nos acompaña después de un viaje, lleva consigo algo más que su forma. Nos recuerda una conversación, una tarde, el lugar donde la descubrimos. Una manera discreta de seguir viajando cuando ya hemos vuelto."
     }
   ],
-  "quote": "La belleza también vive en lo que no se repite."
+  "quote": "La belleza también vive en lo que no se repite.",
+  "en": {
+    "title": "The beauty of the handmade.",
+    "summary": "Objects that hold time, the earth and the touch of their maker.",
+    "imageAlt": "Handcrafted ceramic vessels and a flowering branch",
+    "sections": [
+      {
+        "heading": "The mark of a gesture",
+        "text": "A handmade vessel is not perfectly symmetrical. Its rim may hold a small irregularity, its surface a variation in colour. These differences do not interrupt its beauty: they give it a voice of its own."
+      },
+      {
+        "heading": "Looking with our hands",
+        "text": "Some materials invite us to come closer. Clay, wood and textiles have a presence that does not depend on shine. They remind us of a working rhythm shaped by attention, repetition and patience."
+      },
+      {
+        "heading": "Choosing less, noticing more",
+        "text": "A treasured object can transform a room without filling it. A ceramic piece holding a branch, a carefully placed chair, a bowl we use every morning. Value also lies in the relationship we build with things."
+      },
+      {
+        "heading": "A meaningful keepsake",
+        "text": "When a piece comes home with us after a journey, it carries more than its shape. It recalls a conversation, an afternoon, the place where we discovered it. A quiet way to keep travelling after we have returned."
+      }
+    ],
+    "quote": "Beauty also lives in what cannot be repeated.",
+    "heroAlt": "Concept image for The beauty of the handmade."
+  }
 }

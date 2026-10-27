@@ -1,6 +1,7 @@
 ---
 import Header from '../components/santuario/Header.astro';
 import Footer from '../components/santuario/Footer.astro';
+import { alternateHref, getI18n } from '../lib/santuario/i18n';
 
 interface Props {
   title: string;
@@ -13,10 +14,11 @@ interface Props {
 const { title, description, image = '/santuario/assets/editorial/coast.webp', article = false, structuredData } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(image, Astro.site);
+const { lang } = getI18n(Astro.url);
 ---
 
 <!doctype html>
-<html lang="es" id="top" class="santuario-page">
+<html lang={lang} id="top" class="santuario-page">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -25,12 +27,15 @@ const imageUrl = new URL(image, Astro.site);
     <meta name="theme-color" content="#f6f3ec" />
     <meta name="robots" content="noindex,nofollow" />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={new URL(alternateHref(Astro.url.pathname, 'en'), Astro.site)} />
+    <link rel="alternate" hreflang="es" href={new URL(alternateHref(Astro.url.pathname, 'es'), Astro.site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL(alternateHref(Astro.url.pathname, 'en'), Astro.site)} />
     <meta property="og:type" content={article ? 'article' : 'website'} />
     <meta property="og:title" content={`${title} · El Santuario`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={imageUrl} />
-    <meta property="og:locale" content="es_MX" />
+    <meta property="og:locale" content={lang === 'es' ? 'es_MX' : 'en_US'} />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/santuario/assets/editorial/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/santuario/fonts.css" />

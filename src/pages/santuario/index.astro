@@ -1,26 +1,4 @@
 ---
-import SantuarioLayout from '../../layouts/SantuarioLayout.astro';
-import Masthead from '../../components/santuario/Masthead.astro';
-import Cover from '../../components/santuario/Cover.astro';
-import EditorNote from '../../components/santuario/EditorNote.astro';
-import Journal from '../../components/santuario/Journal.astro';
-import Manifesto from '../../components/santuario/Manifesto.astro';
-import Closing from '../../components/santuario/Closing.astro';
-import { getArticles } from '../../lib/santuario/articles';
-
-const articles = await getArticles();
+import JournalPage from "../../components/santuario/JournalPage.astro";
 ---
-
-<SantuarioLayout
-  title="Historias para habitar la calma"
-  description="El Santuario, el diario de La Casa Que Canta. Historias sobre naturaleza, arte, sabores y pequeños rituales para disfrutar sin prisa."
->
-  <main id="main">
-    <Masthead />
-    <Cover />
-    <EditorNote />
-    <Journal articles={articles} />
-    <Manifesto />
-    <Closing />
-  </main>
-</SantuarioLayout>
+<JournalPage />

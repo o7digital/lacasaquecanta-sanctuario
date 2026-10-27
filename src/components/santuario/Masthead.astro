@@ -1,1 +1,6 @@
-<section class="masthead" aria-labelledby="journal-title"><div class="masthead-meta"><span>UN DIARIO DE LA CASA QUE CANTA</span><span>ZIHUATANEJO, MÉXICO</span></div><h1 id="journal-title"><i>El</i> Santuario<span class="masthead-star" aria-hidden="true">✳</span></h1><div class="masthead-base"><span>HISTORIAS PARA HABITAR LA CALMA</span><span>EDICIÓN 01 — OCTUBRE 2026</span></div></section>
+---
+import { getI18n } from '../../lib/santuario/i18n';
+const { copy } = getI18n(Astro.url);
+---
+
+<section class="masthead" aria-labelledby="journal-title"><div class="masthead-meta"><span>{copy.byline}</span><span>{copy.location}</span></div><h1 id="journal-title"><i>El</i> Santuario<span class="masthead-star" aria-hidden="true">✳</span></h1><div class="masthead-base"><span>{copy.tagline}</span><span>{copy.edition}</span></div></section>
